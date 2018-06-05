@@ -9,21 +9,24 @@ import './styles.css';
 class ResultsComponent extends React.Component {
 
     render() {
+        console.log(this.props.packs.length);
         return (
             <div className="my-result-style">
-                Result
+                {this.props.packs.length} packages been found
                 {this.renderMovies()}
             </div>
         );
     }
 
     renderMovies(){
-        let movie_divs = this.props.movies.map(
-            function(movie){
+        let movie_divs = this.props.packs.map(
+            function(pack){
                 return (
-                    <div key={movie.imdbID} className="movie">
-                    <h2>{movie.Title}</h2><div>{movie.Year}</div>
-                    <img src={movie.Poster} alt={movie.Title}/>
+                    <div key={pack.id} className="movie">
+                    <h2>{pack.packageName}</h2>
+                    <div>{pack.location}</div>
+                    <br/>
+                    <div>{pack.price}</div>
                     </div>
                 );
             }

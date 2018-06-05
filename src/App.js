@@ -21,8 +21,8 @@ class App extends Component {
     MovieService.searchMovies(
       search_term,
       function(response){
-        app.setState({results:response.data.Search});
-        console.log(response.data.Search);
+        app.setState({results:response.data});
+        console.log(response.data);
       }
     );
   }
@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <div>
         <SearchComponent onSearch={this.onSearch.bind(this)} />
-        <ResultsComponent movies={this.state.results}/>
+        <ResultsComponent packs={this.state.results}/>
       </div>
     );
   }
