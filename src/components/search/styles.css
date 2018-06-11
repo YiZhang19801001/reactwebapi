@@ -1,29 +1,28 @@
 .my-search-style{
-    color: white;
+    color: #1e1e1e;
     font-size: 16px;
-    background-color: rgb(8, 85, 85);
-    height: 50px;
-
-    width: 100%;
+    text-align: center;
     padding: 15px;
+    margin: auto;
 }
 
 button{
     color:black;
     border-radius: 5px;
     padding: 10px;
-    background-color: #fff;
+    background-color: rgb(5, 143, 124);
+    width:80px;
+    color: white;
+    font-weight: bold;
 }
 
 input{
     height: 30px;
     border-radius: 3px;
+    width:400px;
     margin-right:10px; 
     margin-right:10px; 
 }
 input::-webkit-input-placeholder{
     font-size: 16px;
-}
-label{
-    margin-right:10px; 
 }

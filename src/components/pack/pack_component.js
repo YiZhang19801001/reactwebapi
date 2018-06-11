@@ -15,9 +15,9 @@ class PackComponent extends React.Component {
         return (
             <div key={this.props.pack.id} className="pack">
                 <h2>{this.props.pack.packageName}</h2>
-                <div>{this.props.pack.location}</div>
+                <div>Location: {this.props.pack.location}</div>
                 <br/>
-                <div>{this.props.pack.price}</div>
+                <div>Price: ${this.props.pack.price}</div>
             </div>
         );
     }

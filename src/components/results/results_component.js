@@ -18,7 +18,7 @@ class ResultsComponent extends React.Component {
         console.log(this.props.packs.length);
         return (
             <div className="my-result-style">
-                {this.props.packs.length} packages been found
+                <div className="result-text">{this.props.packs.length} packages been found</div>
                 {this.renderPacks()}
             </div>
         );

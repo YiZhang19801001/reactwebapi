@@ -2,15 +2,22 @@
     min-height: 400px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-
     width: 100%;
-    background-color: antiquewhite;
+    background-color: rgb(212, 211, 211);
     padding: 15px;
+    
 }
-.pack{
+/* .pack{
     margin: 10px 0px;
     color: azure;
     padding: 10px;
     box-shadow: 1px 1px 3px #666;
     background-color: rgb(8, 85, 85);
+} */
+.result-text{
+    margin: auto;
+    width: 80%;
+    margin-bottom:20px;
+    font-size: 20px;
+    font-weight: bold; 
 }

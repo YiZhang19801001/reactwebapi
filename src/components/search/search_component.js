@@ -24,9 +24,10 @@ class SearchComponent extends React.Component {
     }
     render() {
         return (
+
             <div className="my-search-style">
-                <label htmlFor="">Search</label>
-                <input type="text" placeholder="Search movies..." value={this.state.search_term} onChange={this.onInputChange.bind(this)}/>
+                <h1>Your world of tours, cruises & river cruises.</h1>
+                <input type="text" placeholder="Search Packages..." value={this.state.search_term} onChange={this.onInputChange.bind(this)}/>
                 <button onClick = {this.onButtonClick.bind(this)}>Go</button>
             </div>
         );

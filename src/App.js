@@ -5,7 +5,7 @@ import './App.css';
 import ResultsComponent from './components/results/results_component';
 import SearchComponent from './components/search/search_component';
 //service
-import * as MovieService from './services/movie_service';
+import * as PackageService from './services/package_service';
 
 class App extends Component {
   constructor(props){
@@ -18,7 +18,7 @@ class App extends Component {
 
   onSearch(search_term){
     let app=this;
-    MovieService.searchMovies(
+    PackageService.searchPackages(
       search_term,
       function(response){
         app.setState({results:response.data});
@@ -31,6 +31,7 @@ class App extends Component {
 
     return (
       <div>
+        
         <SearchComponent onSearch={this.onSearch.bind(this)} />
         <ResultsComponent packs={this.state.results}/>
       </div>
