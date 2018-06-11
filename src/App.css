@@ -29,4 +29,5 @@
 
 body, html{
   background-color: whitesmoke;
+  background-image: url(assets/background.jpg);
 }
